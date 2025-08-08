@@ -28,7 +28,7 @@ export default function BiasOverTime({ data, dimension, title }: BiasOverTimePro
     return `${x},${y}`
   }).join(' ')
 
-  const dimensionName = dimension.replace(/_/g, ' ')
+  const dimensionName = String(dimension).replace(/_/g, ' ')
 
   return (
     <div>

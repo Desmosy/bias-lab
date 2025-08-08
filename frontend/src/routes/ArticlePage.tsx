@@ -76,7 +76,7 @@ export default function ArticlePage() {
     if (!id) return
     fetchArticle(id)
       .then(setArticle)
-      .catch((e) => setError(e?.message ?? 'Failed to load'))
+      .catch((e: any) => setError(e?.message ?? 'Failed to load'))
   }, [id])
 
   const contentNodes = useMemo(() => {
@@ -168,7 +168,7 @@ export default function ArticlePage() {
               
               <div className="mt-8 space-y-6">
                 {Object.entries(article.bias).map(([dimension, score]) => (
-                  <BiasScore key={dimension} dimension={dimension} score={score} />
+                  <BiasScore key={dimension} dimension={dimension} score={score as number} />
                 ))}
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function ArticlePage() {
                   Primary Sources
                 </h3>
                 <ul className="space-y-4">
-                  {article.primary_sources.map((source) => (
+                  {article.primary_sources.map((source: any) => (
                     <li key={source.url}>
                       <a 
                         href={source.url} 

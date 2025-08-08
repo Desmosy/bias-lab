@@ -92,7 +92,7 @@ export default function BiasRadar({ scores, size = 280 }: { scores: BiasScores; 
           const [x, y] = polarToCartesian(r, angle)
           return (
             <circle 
-              key={key} 
+              key={String(key)} 
               cx={center + x} 
               cy={center + y} 
               r={3} 
@@ -113,7 +113,7 @@ export default function BiasRadar({ scores, size = 280 }: { scores: BiasScores; 
             
             return (
               <text 
-                key={key} 
+                key={String(key)} 
                 x={x} 
                 y={y} 
                 textAnchor="middle" 

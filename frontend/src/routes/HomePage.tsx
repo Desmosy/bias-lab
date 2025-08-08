@@ -96,7 +96,7 @@ export default function HomePage() {
   useEffect(() => {
     fetchNarratives()
       .then(setClusters)
-      .catch((e) => setError(e?.message ?? 'Failed to load'))
+      .catch((e: any) => setError(e?.message ?? 'Failed to load'))
   }, [])
 
   if (error) {
