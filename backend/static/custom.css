@@ -1,0 +1,249 @@
+/* OpenAI-style FastAPI Documentation Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Root variables */
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-tertiary: #1a1a1a;
+  --text-primary: #e5e5e5;
+  --text-secondary: #a0a0a0;
+  --text-accent: #ffffff;
+  --border-color: #2a2a2a;
+  --accent-color: #ffffff;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+}
+
+/* Global styles */
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Main background */
+body {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Swagger UI container */
+.swagger-ui {
+  color: var(--text-primary) !important;
+}
+
+/* Top bar */
+.swagger-ui .topbar {
+  background: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 16px 0 !important;
+}
+
+.swagger-ui .topbar .download-url-wrapper {
+  display: none !important;
+}
+
+/* Info section */
+.swagger-ui .info {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  padding: 24px !important;
+  margin: 20px 0 !important;
+}
+
+.swagger-ui .info .title {
+  color: var(--text-accent) !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.025em !important;
+}
+
+.swagger-ui .info .description {
+  color: var(--text-secondary) !important;
+  font-size: 1.1rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Operations */
+.swagger-ui .opblock {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  margin: 16px 0 !important;
+  box-shadow: none !important;
+}
+
+.swagger-ui .opblock .opblock-summary {
+  background: transparent !important;
+  border: none !important;
+  padding: 16px 20px !important;
+}
+
+.swagger-ui .opblock .opblock-summary-description {
+  color: var(--text-secondary) !important;
+}
+
+.swagger-ui .opblock .opblock-summary-path {
+  color: var(--text-accent) !important;
+  font-weight: 500 !important;
+}
+
+/* HTTP methods */
+.swagger-ui .opblock.opblock-get .opblock-summary-method {
+  background: var(--success-color) !important;
+  color: white !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+}
+
+.swagger-ui .opblock.opblock-post .opblock-summary-method {
+  background: var(--warning-color) !important;
+  color: white !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+}
+
+.swagger-ui .opblock.opblock-put .opblock-summary-method {
+  background: #3b82f6 !important;
+  color: white !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+}
+
+.swagger-ui .opblock.opblock-delete .opblock-summary-method {
+  background: var(--error-color) !important;
+  color: white !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+}
+
+/* Expanded operation details */
+.swagger-ui .opblock .opblock-section-header {
+  background: var(--bg-tertiary) !important;
+  border: none !important;
+  color: var(--text-accent) !important;
+  padding: 12px 20px !important;
+}
+
+.swagger-ui .opblock .opblock-body {
+  background: var(--bg-tertiary) !important;
+  padding: 20px !important;
+}
+
+/* Parameters */
+.swagger-ui .parameters-col_description input[type=text] {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
+  color: var(--text-primary) !important;
+  padding: 8px 12px !important;
+}
+
+.swagger-ui .parameter__name {
+  color: var(--text-accent) !important;
+  font-weight: 500 !important;
+}
+
+.swagger-ui .parameter__type {
+  color: var(--success-color) !important;
+  font-weight: 500 !important;
+}
+
+/* Response section */
+.swagger-ui .responses-wrapper {
+  background: transparent !important;
+  border: none !important;
+}
+
+.swagger-ui .response-col_status {
+  color: var(--text-accent) !important;
+  font-weight: 500 !important;
+}
+
+.swagger-ui .response-col_description {
+  color: var(--text-secondary) !important;
+}
+
+/* Code blocks */
+.swagger-ui .highlight-code {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+}
+
+.swagger-ui .microlight {
+  background: var(--bg-primary) !important;
+}
+
+/* Try it out button */
+.swagger-ui .btn.try-out__btn {
+  background: var(--accent-color) !important;
+  color: var(--bg-primary) !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  padding: 8px 16px !important;
+  transition: all 0.2s ease !important;
+}
+
+.swagger-ui .btn.try-out__btn:hover {
+  background: #f0f0f0 !important;
+  transform: translateY(-1px) !important;
+}
+
+.swagger-ui .btn.execute {
+  background: var(--success-color) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  padding: 10px 20px !important;
+}
+
+/* Models section */
+.swagger-ui .model-box {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+}
+
+.swagger-ui .model .property {
+  color: var(--text-primary) !important;
+}
+
+.swagger-ui .model .property-type {
+  color: var(--success-color) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Remove Swagger UI branding */
+.swagger-ui .topbar .download-url-wrapper {
+  display: none !important;
+}
+
+/* Custom title */
+.swagger-ui .info .title::before {
+  content: "🧠 ";
+  margin-right: 8px;
+}
