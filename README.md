@@ -9,7 +9,7 @@ A functional full-stack prototype that makes media bias tangible and accessible.
 - **Dark Mode**: Automatic system preference detection
 - **Responsive Design**: Mobile-first, desktop-optimized
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Backend**: FastAPI (Python) with structured mock data
 - **Frontend**: React + TypeScript + Vite
