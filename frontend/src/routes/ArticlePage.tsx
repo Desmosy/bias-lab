@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { ArticleDetail, fetchArticle } from '@/lib/api'
-import BiasRadar from '@/components/BiasRadar'
-import BiasOverTime from '@/components/BiasOverTime'
+import { ArticleDetail, fetchArticle } from '../lib/api'
+import BiasRadar from '../components/BiasRadar'
+import BiasOverTime from '../components/BiasOverTime'
 
 const DIMENSION_COLORS: Record<string, string> = {
   ideological_stance: 'bg-purple-500/20 border-purple-500/40',

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { fetchNarratives, NarrativeCluster } from '@/lib/api'
+import { fetchNarratives, NarrativeCluster } from '../lib/api'
 import { Link } from 'react-router-dom'
 
 

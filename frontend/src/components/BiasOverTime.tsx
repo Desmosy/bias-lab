@@ -1,4 +1,4 @@
-import { BiasScores } from '@/lib/api'
+import { BiasScores } from '../lib/api'
 
 interface BiasTimePoint {
   date: string

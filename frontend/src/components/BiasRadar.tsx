@@ -1,4 +1,4 @@
-import { BiasScores } from '@/lib/api'
+import { BiasScores } from '../lib/api'
 
 const DIMENSIONS: Array<keyof BiasScores> = [
   'ideological_stance',
